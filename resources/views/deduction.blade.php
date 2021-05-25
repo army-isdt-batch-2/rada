@@ -8,7 +8,7 @@
     
         <div class="col-10">
             <h4>
-                Deduction Test
+                Deduction TestS
             </h4>
         </div> 
         <div class="col-12">
