@@ -182,7 +182,7 @@
         </div> 
     </div>
 
-    <!-- copy this-->
+    
     <style type="text/css"> 
         .payslip-card{width: 100%; float: left; padding: 2%;}
         .payslip-card .company-info{width: 100%; float: left; border-bottom: 1px solid #333; padding-bottom: 2%;}
