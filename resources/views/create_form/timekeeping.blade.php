@@ -19,44 +19,28 @@
             <form class="row g-3" action="/timekeeping/save" method="post">
                 @csrf
                 <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" required>
+                <label for="clockin" class="form-label">Clock In</label>
+                <input type="time" class="form-control" id="clockin" name="clockin" required>
                 </div>
                 <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" required>
+                <label for="clockout" class="form-label">Clock out</label>
+                <input type="time" class="form-control" id="clockout" name="clockout" required>
                 </div>
                 <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                <label for="total" class="form-label">Total</label>
+                <input type="number" class="form-control" id="total" placeholder="1234"  name="total" required>
                 </div>
                 <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+                <label for="employee_id" class="form-label">Employee Id</label>
+                <input type="text" class="form-control" id="employee_id" placeholder="" name="employee_id" required>
                 </div>
                 <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity" required>
+                <label for="timekeeping_id" class="form-label">Timekeeping Id</label>
+                <input type="text" class="form-control" id="timekeeping_id" name="timekeeping_id" required>
                 </div>
-                <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select" required>
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                </select>
-                </div>
-                <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip" required>
-                </div>
-                <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                    <label class="form-check-label" for="gridCheck">
-                    Check me out
-                    </label>
-                </div>
-                </div>
+                
+                
+                
                 <div class="col-12">
                 <button type="submit" class="btn btn-primary">Save</button>
                 </div>

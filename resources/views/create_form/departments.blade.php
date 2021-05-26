@@ -16,7 +16,7 @@
             <hr>    
         </div>
         <div class="col12">
-            <<form class="row g-3" action="/department/save" method="post">
+            <form class="row g-3" action="/department/save" method="post">
                 @csrf
                 <div class="col-md-6">
                 <label for="department_name" class="form-label">Department</label>

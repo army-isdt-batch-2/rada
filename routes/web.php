@@ -11,14 +11,14 @@ Route::get('/login',[
     App\Http\Controllers\LoginController::class,
     'index'
 ])->name('login');
-Route::get('/table',[
-    App\Http\Controllers\LoginController::class,
-    'table'
-])->name('table');
-Route::get('/layout',[
-    App\Http\Controllers\LoginController::class,
-    'layout'
-])->name('layout');
+// Route::get('/table',[
+//     App\Http\Controllers\LoginController::class,
+//     'table'
+// ])->name('table');
+// Route::get('/layout',[
+//     App\Http\Controllers\LoginController::class,
+//     'layout'
+// ])->name('layout');
 Route::get('/deduction',[
     App\Http\Controllers\DeductionController::class,
     'deduction'
@@ -27,10 +27,10 @@ Route::get('/department',[
     App\Http\Controllers\DepartmentController::class,
     'department'
 ])->name('department');
-// Route::post('/department/save',[
-//     App\Http\Controllers\DepartmentController::class,
-//     'departmentSave'
-// ])->name('departmentSave');
+Route::post('/department/save',[
+    App\Http\Controllers\DepartmentController::class,
+    'departmentSave'
+])->name('department.save');
 Route::get('/employees',[
     App\Http\Controllers\EmployeesController::class,
     'employees'
@@ -99,6 +99,9 @@ Route::get('/payslips/save',[
     App\Http\Controllers\PayslipsController::class,
     'payslipsSave'
 ])->name('payslips.Save');
+
+
+
 
 
 

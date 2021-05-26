@@ -20,7 +20,7 @@
                 @csrf
                 <div class="col-md-12">
                 <label for="photos" class="form-label">Photo</label>
-                <input type="file" class="form-control" id="inputEmail4"  name="photos" required>
+                <input type="file" class="form-control" id="photos"  name="photos" required>
                 </div>
                 <div class="col-md-4">
                 <label for="firstname" class="form-label">First name</label>
@@ -28,14 +28,14 @@
                 </div>
                 <div class="col-4">
                 <label for="middlename" class="form-label">Middle name</label>
-                <input type="text" class="form-control" id="middlename" placeholder="Middle name" name="lastname" required>
+                <input type="text" class="form-control" id="middlename" placeholder="Middle name" name="middlename" required>
                 </div>
                 <div class="col-4">
                 <label for="lastname" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="lastname" placeholder="Last name" name="middlename" required>
+                <input type="text" class="form-control" id="lastname" placeholder="Last name" name="lastname" required>
                 </div>
                 <div class="col-md-4">
-                <label for="Contact" class="form-label">Contact</label>
+                <label for="contact" class="form-label">Contact</label>
                 <input type="number" class="form-control" id="contact" placeholder="09..." name="contact" required>
                 </div>       
                 <div class="col-md-4">
@@ -43,8 +43,8 @@
                     <input type="date" class="form-control" id="birthday" name="birthday" required>
                 </div>
                 <div class="col-md-4">
-                <label for="inputState" class="form-label">Gender</label>
-                <select id="inputState" class="form-select" name="gender"required>
+                <label for="gender" class="form-label">Gender</label>
+                <select id="gender" class="form-select" name="gender"required>
                     <option selected>Choose...</option>
                     <option>Male</option>
                     <option>Female</option>
@@ -55,8 +55,8 @@
                     <input type="textarea" class="form-control" id="address" name="address" required>
                 </div>
                 <div class="col-md-4">
-                <label for="department" class="form-label">Department</label>
-                <select id="department" class="form-select" name="department_id"required>
+                <label for="department_id" class="form-label">Department</label>
+                <select id="department_id" class="form-select" name="department_id"required>
                     <option selected>Choose...</option>
                     <option>Depart 1</option>
                     <option>Depart 2</option>
@@ -68,12 +68,12 @@
                 <input type="text" class="form-control" id="designation" name="designation" required>
                 </div>
                 <div class="col-md-4">
-                    <label for="basicrate" class="form-label">Basic Rate</label>
-                    <input type="number" class="form-control" id="basicrate" name="rate" required>
+                    <label for="rate" class="form-label">Basic Rate</label>
+                    <input type="number" class="form-control" id="rate" name="rate" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="department" class="form-label">PhilHealth Contribution Table</label>
-                    <select id="department" class="form-select" name="ph_id"required>
+                    <label for="ph_id" class="form-label">PhilHealth Contribution Table</label>
+                    <select id="ph_id" class="form-select" name="ph_id"required>
                         <option selected>Choose...</option>
                         <option>Depart 1</option>
                         <option>Depart 2</option>
@@ -81,8 +81,8 @@
                     </select>
                 </div>
                 <div class="col-md-6">
-                    <label for="department" class="form-label">SSS Contribution Table</label>
-                    <select id="department" class="form-select" name="sss_id"required>
+                    <label for="sss_id" class="form-label">SSS Contribution Table</label>
+                    <select id="sss_id" class="form-select" name="sss_id"required>
                         <option selected>Choose...</option>
                         <option>Depart 1</option>
                         <option>Depart 2</option>
@@ -90,8 +90,8 @@
                     </select>
                 </div>
                 <div class="col-md-6">
-                    <label for="department" class="form-label">Pag-ibig Contribution Table</label>
-                    <select id="department" class="form-select" name="pi_id" required>
+                    <label for="pi_id" class="form-label">Pag-ibig Contribution Table</label>
+                    <select id="pi_id" class="form-select" name="pi_id" required>
                         <option selected>Choose...</option>
                         <option>Depart 1</option>
                         <option>Depart 2</option>
@@ -99,8 +99,8 @@
                     </select>
                  </div>
                  <div class="col-md-6">
-                    <label for="department" class="form-label">Income Tax Table</label>
-                    <select id="department" class="form-select" name="tax_id" required>
+                    <label for="tax_id" class="form-label">Income Tax Table</label>
+                    <select id="tax_id" class="form-select" name="tax_id" required>
                         <option selected>Choose...</option>
                         <option>Depart 1</option>
                         <option>Depart 2</option>

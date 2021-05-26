@@ -19,44 +19,15 @@
             <form class="row g-3" action="/payslips/save" method="post">
                 @csrf
                 <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" required>
+                    
+                <label for="cutoff_start" class="form-label">Cutoff Start</label>
+                <input type="date" class="form-control" id="cutoff_start" name="cutoff_start" required>
                 </div>
                 <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" required>
-                </div>
-                <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
-                </div>
-                <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
-                </div>
-                <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity" required>
-                </div>
-                <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select" required>
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                </select>
-                </div>
-                <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip" required>
-                </div>
-                <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                    <label class="form-check-label" for="gridCheck">
-                    Check me out
-                    </label>
-                </div>
-                </div>
+                    <label for="cutoff_end" class="form-label">cutoff End</label>
+                    <input type="date" class="form-control" id="cutoff_end" name="cutoff_end" required>
+                    </div>
+                
                 <div class="col-12">
                 <button type="submit" class="btn btn-primary">Save</button>
                 </div>
