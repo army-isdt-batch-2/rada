@@ -16,35 +16,37 @@
             <hr>    
         </div>
         <div class="col12">
-            <form class="row g-3">
+           
+            <form class="row g-3" action="/deduction/save" method="post">
+                @csrf
                 <div class="col-md-4">
-                    <label for="contributionType" class="form-label">Contribution Type</label>
-                    <select id="contributionType" class="form-select">
+                    <label for="contribution_type" class="form-label">Contribution Type</label>
+                    <select id="contribution_type" class="form-select" name="contribution_type" required>
                         <option selected>Tax</option>
                         <option>Tax 1</option>
                         <option>Tax 2</option>
                     </select>
                 </div>
                 <div class="col-md-8">
-                <label for="baseRange" class="form-label">Base Range</label>
-                <input type="baseRange" class="form-control" id="baseRange" placeholder="Base Range">
+                <label for="basic_range" class="form-label">Base Range</label>
+                <input type="number" class="form-control" id="basic_range" placeholder="Base Range" name="basic_range" required>
                 </div>
                 <div class="col-md-4">
-                <label for="monthlyContribution" class="form-label">Monthly Contribution</label>
-                <input type="monthlyContribution" class="form-control" id="monthlyContribution" placeholder="Monthly Contribution">
+                <label for="monthly_contribution" class="form-label">Monthly Contribution</label>
+                <input type="number" class="form-control" id="monthly_contribution" placeholder="Monthly Contribution" name="monthly_contribution" required>
                 </div>
                 <div class="col-4">
-                <label for="employeeShare" class="form-label">Employee Share</label>
-                <input type="text" class="form-control" id="employeeShare" placeholder="Employee Share">
+                <label for="employee_share" class="form-label">Employee Share</label>
+                <input type="text" class="form-control" id="employee_share" placeholder="Employee Share" name="employee_share" required>
                 </div>
                 <div class="col-4">
-                <label for="employerShare" class="form-label">Employer Share</label>
-                <input type="text" class="form-control" id="employerShare" placeholder="Employer Share">
+                <label for="employer_share" class="form-label">Employer Share</label>
+                <input type="text" class="form-control" id="employer_share" placeholder="Employer Share" name="employer_share" required>
                 </div>
 
                 <div class="col-12">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">
                     Check me out
                     </label>

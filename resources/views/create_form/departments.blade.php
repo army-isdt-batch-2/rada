@@ -16,10 +16,11 @@
             <hr>    
         </div>
         <div class="col12">
-            <form class="row g-3">
+            <<form class="row g-3" action="/department/save" method="post">
+                @csrf
                 <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Department</label>
-                <input type="department" class="form-control" id="Department">
+                <label for="department_name" class="form-label">Department</label>
+                <input type="text" class="form-control" id="department_name" name="department_name" required>
                 </div>
                 
                 <div class="col-12">

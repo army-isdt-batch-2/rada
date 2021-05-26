@@ -13,23 +13,24 @@
             </h4>
         </div>
         <div class="col-12">
-            <form class="row g-3">
+            <form class="row g-3" action="/loans/save" method="post">
+                @csrf
                 <div class="col-md-4">
                 <label for="fullname" class="form-label">Fullname</label>
-                <input type="text" class="form-control" id="fullname" placeholder="Fullname">
+                <input type="text" class="form-control" id="fullname" placeholder="Fullname" required>
                 </div>
                 <div class="col-md-4">
                 <label for="employee" class="form-label">Employee</label>
-                <input type="text" class="form-control" id="employee" placeholder="Employee">
+                <input type="text" class="form-control" id="employee" placeholder="Employee" required>
                 </div>
                 <div class="col-4">
                 <label for="designation" class="form-label">Designation</label>
-                <input type="text" class="form-control" id="designation" placeholder="Designation">
+                <input type="text" class="form-control" id="designation" placeholder="Designation" required>
                 </div>
                 <div class="col-md-4">
                     <div class="col-md-12">
                         <label for="leavesType" class="form-label">Load Type</label>
-                        <select id="leavesType" class="form-select">
+                        <select id="leavesType" class="form-select" required>
                             <option selected>Choose...</option>
                             <option>Load Type 1</option>
                             <option>Load Type 2</option>
@@ -37,22 +38,22 @@
                     </div>
                     <div class="col-md-12">
                         <label for="start" class="form-label">Start</label>
-                        <input type="date" class="form-control" id="start" placeholder="Start Date">
+                        <input type="date" class="form-control" id="start" placeholder="Start Date" required>
                     </div>
                     <div class="col-md-12">
                         <label for="end" class="form-label">End</label>
-                        <input type="date" class="form-control" id="end" placeholder="End Date">
+                        <input type="date" class="form-control" id="end" placeholder="End Date" required>
                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="col-md-12">
                         <label for="notes" class="form-label">Notes</label>
-                        <textarea rows="7" type="text" class="form-control" id="notes" placeholder="notes"></textarea>
+                        <textarea rows="7" type="text" class="form-control" id="notes" placeholder="notes" required></textarea>
                     </div>
                 </div>
 
                 <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="submit" class="btn btn-primary">Save</button>
                 </div>
             </form>
         </div>

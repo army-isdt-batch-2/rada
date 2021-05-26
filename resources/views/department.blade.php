@@ -14,7 +14,7 @@
         <div class="col-12">
             <hr>    
         </div>
-          <form class="row g-2">
+            <form class="row g-3" action="" method="post">
   
               <div class="col-auto">
                   <input type="search" class="form-control" id="search" placeholder="Search">
